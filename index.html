@@ -14,6 +14,7 @@
             overflow-x: hidden;
         }
 
+        /* 🌌 Animated background */
         body::before {
             content: "";
             position: fixed;
@@ -22,16 +23,17 @@
             width: 200%;
             height: 200%;
             background: url("https://www.transparenttextures.com/patterns/stardust.png");
-            opacity: 0.25;
-            animation: starsMove 80s linear infinite;
+            opacity: 0.2;
+            animation: moveStars 80s linear infinite;
             z-index: -1;
         }
 
-        @keyframes starsMove {
+        @keyframes moveStars {
             from { transform: translate(0, 0); }
             to { transform: translate(-500px, -500px); }
         }
 
+        /* 🎮 Header */
         header {
             text-align: center;
             padding: 110px 20px;
@@ -49,12 +51,14 @@
             opacity: 0.9;
         }
 
+        /* 📦 Layout */
         section {
             max-width: 900px;
             margin: auto;
             padding: 50px 20px;
         }
 
+        /* 🧱 Cards */
         .card {
             background: rgba(22, 32, 51, 0.85);
             backdrop-filter: blur(6px);
@@ -71,6 +75,7 @@
             box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
         }
 
+        /* 🔘 Button */
         .btn {
             display: inline-block;
             background: linear-gradient(90deg, #06b6d4, #0ea5e9);
@@ -89,6 +94,7 @@
             box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
         }
 
+        /* 🎥 Creators */
         .creator-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -119,6 +125,7 @@
             text-align: center;
             padding: 30px;
             background: #050a14;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -133,6 +140,7 @@
 
 <section id="about">
 
+    <!-- 🌐 Server Hub -->
     <div class="card">
         <h2>🌐 NovaCraft Server Hub</h2>
         <p><strong>Status:</strong> Online (Community SMP)</p>
@@ -140,6 +148,7 @@
         <p><strong>Focus:</strong> Creativity & Community storytelling</p>
     </div>
 
+    <!-- 👋 Welcome -->
     <div class="card">
         <h2>👋 Welcome</h2>
         <p>
@@ -148,6 +157,7 @@
         </p>
     </div>
 
+    <!-- 🌍 World -->
     <div class="card">
         <h2>🌍 The World</h2>
         <p>
@@ -156,6 +166,7 @@
         </p>
     </div>
 
+    <!-- 🎥 Creators -->
     <div class="card">
         <h2>🎥 NovaCraft Creators</h2>
 
@@ -189,6 +200,7 @@
         </div>
     </div>
 
+    <!-- ⚒️ Features -->
     <div class="card">
         <h2>⚒️ Features</h2>
         <ul>
@@ -200,11 +212,12 @@
         </ul>
     </div>
 
+    <!-- 📌 Follow -->
     <div class="card">
         <h2>📌 Watch & Follow</h2>
         <p>
-            Follow the NovaCraft creators on YouTube and social media as they
-            explore, build, and create amazing stories together.
+            Follow the NovaCraft creators on YouTube and social media
+            as they explore, build, and create amazing stories together.
         </p>
     </div>
 
