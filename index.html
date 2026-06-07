@@ -11,12 +11,37 @@
             font-family: Arial, sans-serif;
             background: #0b1220;
             color: white;
+            body {
+    overflow-x: hidden;
+}
+
+/* Star background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.25;
+    animation: starsMove 80s linear infinite;
+    z-index: -1;
+}
+
+@keyframes starsMove {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-500px, -500px); }
+}
         }
 
         header {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #1e3a8a, #0891b2);
+            header {
+    text-align: center;
+    padding: 110px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #0891b2);
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
         }
 
         h1 {
@@ -92,6 +117,19 @@
             color: #06b6d4;
             text-decoration: none;
         }
+.card {
+    background: rgba(22, 32, 51, 0.85);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
+}
+        
     </style>
 </head>
 
@@ -103,7 +141,12 @@
     <a href="#about" class="btn">Enter NovaCraft</a>
 </header>
 
-<section id="about">
+<"<div class="card">
+    <h2>🌐 NovaCraft Server Hub</h2>
+    <p><strong>Status:</strong> Online (Community SMP)</p>
+    <p><strong>Style:</strong> Survival • Builds • Shops • Events</p>
+    <p><strong>Focus:</strong> Creativity & Community storytelling</p>
+</div>
 
     <div class="card">
         <h2>👋 Welcome</h2>
