@@ -5,160 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaCraft SMP</title>
 
-    <<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0b1220;
-    color: white;
-    overflow-x: hidden;
-}
-
-/* Star background */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: url("https://www.transparenttextures.com/patterns/stardust.png");
-    opacity: 0.25;
-    animation: starsMove 80s linear infinite;
-    z-index: -1;
-}
-
-@keyframes starsMove {
-    from { transform: translate(0, 0); }
-    to { transform: translate(-500px, -500px); }
-}
-
-header {
-    text-align: center;
-    padding: 110px 20px;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a, #0891b2);
-    border-bottom: 2px solid rgba(255,255,255,0.1);
-}
-
-h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-}
-
-.tagline {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-section {
-    max-width: 900px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-.card {
-    background: rgba(22, 32, 51, 0.85);
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    transition: 0.3s;
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #050a14;
-}
-
-.btn {
-    display: inline-block;
-    background: linear-gradient(90deg, #06b6d4, #0ea5e9);
-    color: white;
-    padding: 12px 22px;
-    border-radius: 12px;
-    text-decoration: none;
-    margin-top: 20px;
-    font-weight: bold;
-    box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
-}
-
-/* Creator grid */
-.creator-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.creator {
-    background: rgba(255,255,255,0.05);
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.1);
-    text-align: center;
-    transition: 0.3s;
-}
-
-.creator:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.08);
-}
-
-.creator a {
-    color: #06b6d4;
-    text-decoration: none;
-}
-</style>>
+    <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #0b1220;
             color: white;
-            body {
-    overflow-x: hidden;
-}
+            overflow-x: hidden;
+        }
 
-/* Star background */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: url("https://www.transparenttextures.com/patterns/stardust.png");
-    opacity: 0.25;
-    animation: starsMove 80s linear infinite;
-    z-index: -1;
-}
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background: url("https://www.transparenttextures.com/patterns/stardust.png");
+            opacity: 0.25;
+            animation: starsMove 80s linear infinite;
+            z-index: -1;
+        }
 
-@keyframes starsMove {
-    from { transform: translate(0, 0); }
-    to { transform: translate(-500px, -500px); }
-}
+        @keyframes starsMove {
+            from { transform: translate(0, 0); }
+            to { transform: translate(-500px, -500px); }
         }
 
         header {
-            header {
-    text-align: center;
-    padding: 110px 20px;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a, #0891b2);
-    border-bottom: 2px solid rgba(255,255,255,0.1);
-}
+            text-align: center;
+            padding: 110px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0891b2);
+            border-bottom: 2px solid rgba(255,255,255,0.1);
         }
 
         h1 {
@@ -178,16 +56,19 @@ body::before {
         }
 
         .card {
-            background: #162033;
+            background: rgba(22, 32, 51, 0.85);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
             padding: 25px;
             border-radius: 15px;
             margin-bottom: 20px;
+            transition: 0.3s;
         }
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #050a14;
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
         }
 
         .btn {
@@ -208,7 +89,6 @@ body::before {
             box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
         }
 
-        /* Creator grid */
         .creator-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -234,19 +114,12 @@ body::before {
             color: #06b6d4;
             text-decoration: none;
         }
-.card {
-    background: rgba(22, 32, 51, 0.85);
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    transition: 0.3s;
-}
 
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
-}
-        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #050a14;
+        }
     </style>
 </head>
 
@@ -258,12 +131,14 @@ body::before {
     <a href="#about" class="btn">Enter NovaCraft</a>
 </header>
 
-<"<div class="card">
-    <h2>🌐 NovaCraft Server Hub</h2>
-    <p><strong>Status:</strong> Online (Community SMP)</p>
-    <p><strong>Style:</strong> Survival • Builds • Shops • Events</p>
-    <p><strong>Focus:</strong> Creativity & Community storytelling</p>
-</div>
+<section id="about">
+
+    <div class="card">
+        <h2>🌐 NovaCraft Server Hub</h2>
+        <p><strong>Status:</strong> Online (Community SMP)</p>
+        <p><strong>Style:</strong> Survival • Builds • Shops • Events</p>
+        <p><strong>Focus:</strong> Creativity & Community storytelling</p>
+    </div>
 
     <div class="card">
         <h2>👋 Welcome</h2>
