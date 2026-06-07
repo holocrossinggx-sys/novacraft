@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaCraft SMP</title>
 
-    <style>
+    <body {
+    background: #0b1220;
+    overflow-x: hidden;
+}
+
+/* animated stars */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: transparent url("https://www.transparenttextures.com/patterns/stardust.png");
+    animation: moveStars 60s linear infinite;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+@keyframes moveStars {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-500px, -500px); }
+}>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -49,13 +71,22 @@
         }
 
         .btn {
-            display: inline-block;
-            background: #06b6d4;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 10px;
-            text-decoration: none;
-            margin-top: 20px;
+    display: inline-block;
+    background: linear-gradient(90deg, #06b6d4, #0ea5e9);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
+}
         }
 
         .btn:hover {
@@ -93,7 +124,18 @@
 
 <body>
 
-<header>
+<header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #0891b2);
+    border-bottom: 3px solid rgba(255,255,255,0.1);
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}>
     <h1>🌟 NovaCraft SMP</h1>
     <p class="tagline">A survival world built by creativity, chaos, and community.</p>
     <a href="#about" class="btn">Enter NovaCraft</a>
